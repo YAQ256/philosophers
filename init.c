@@ -6,7 +6,7 @@
 /*   By: cyacoub- <cyacoub-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/31 12:51:05 by cyacoub-          #+#    #+#             */
-/*   Updated: 2023/06/01 13:22:20 by cyacoub-         ###   ########.fr       */
+/*   Updated: 2023/06/01 14:45:36 by cyacoub-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,6 @@ void	*routine(void *ptr)
 	pthread_mutex_unlock(&philo->data->m_start);
 	if (philo->time_last_meal == -1)
 		return (NULL);
-	ft_print(philo, "is thinking");
 	if (philo->id % 2 == 0)
 		ft_usleep(philo, (philo->data->t_t_e * 0.9));
 	while (is_end(philo->data) == 0)
